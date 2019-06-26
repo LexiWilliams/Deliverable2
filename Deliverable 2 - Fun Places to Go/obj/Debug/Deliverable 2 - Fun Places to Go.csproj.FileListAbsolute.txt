@@ -1,0 +1,7 @@
+C:\Users\Lexi\Desktop\C#\Deliverable 2 - Fun Places to Go\Deliverable 2 - Fun Places to Go\bin\Debug\Deliverable 2 - Fun Places to Go.exe.config
+C:\Users\Lexi\Desktop\C#\Deliverable 2 - Fun Places to Go\Deliverable 2 - Fun Places to Go\bin\Debug\Deliverable 2 - Fun Places to Go.exe
+C:\Users\Lexi\Desktop\C#\Deliverable 2 - Fun Places to Go\Deliverable 2 - Fun Places to Go\bin\Debug\Deliverable 2 - Fun Places to Go.pdb
+C:\Users\Lexi\Desktop\C#\Deliverable 2 - Fun Places to Go\Deliverable 2 - Fun Places to Go\obj\Debug\Deliverable 2 - Fun Places to Go.csprojAssemblyReference.cache
+C:\Users\Lexi\Desktop\C#\Deliverable 2 - Fun Places to Go\Deliverable 2 - Fun Places to Go\obj\Debug\Deliverable 2 - Fun Places to Go.csproj.CoreCompileInputs.cache
+C:\Users\Lexi\Desktop\C#\Deliverable 2 - Fun Places to Go\Deliverable 2 - Fun Places to Go\obj\Debug\Deliverable 2 - Fun Places to Go.exe
+C:\Users\Lexi\Desktop\C#\Deliverable 2 - Fun Places to Go\Deliverable 2 - Fun Places to Go\obj\Debug\Deliverable 2 - Fun Places to Go.pdb
