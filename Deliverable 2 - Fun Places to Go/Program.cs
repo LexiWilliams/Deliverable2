@@ -15,7 +15,7 @@ namespace Deliverable_2___Fun_Places_to_Go
             while (runProgramAgain == true)
             {
                 string transportation = "", activity = "", mood = "", userInput = "";
-
+                int userInputAsInt = 0;
                 bool repeat1 = true, repeat2 = true, repeat3 = true;
 
                 while (repeat1 == true)
@@ -28,29 +28,38 @@ namespace Deliverable_2___Fun_Places_to_Go
                     Console.WriteLine("4) Good Food");
 
                     userInput = Console.ReadLine();
-                    if (userInput == "1")
+                    bool userInputSuccessfulyParsed = Int32.TryParse(userInput, out userInputAsInt);
+                    if (userInputSuccessfulyParsed == true)
                     {
-                        activity = "stock car racing";
-                        mood = "action";
-                        repeat1 = false;
-                    }
-                    else if (userInput == "2")
-                    {
-                        activity = "hiking";
-                        mood = "chilling";
-                        repeat1 = false;
-                    }
-                    else if (userInput == "3")
-                    {
-                        activity = "skydiving";
-                        mood = "danger";
-                        repeat1 = false;
-                    }
-                    else if (userInput == "4")
-                    {
-                        activity = "to Taco Bell";
-                        mood = "good food";
-                        repeat1 = false;
+                        if (userInputAsInt == 1)
+                        {
+                            activity = "stock car racing";
+                            mood = "action";
+                            repeat1 = false;
+                        }
+                        else if (userInputAsInt == 2)
+                        {
+                            activity = "hiking";
+                            mood = "chilling";
+                            repeat1 = false;
+                        }
+                        else if (userInputAsInt == 3)
+                        {
+                            activity = "skydiving";
+                            mood = "danger";
+                            repeat1 = false;
+                        }
+                        else if (userInputAsInt == 4)
+                        {
+                            activity = "to Taco Bell";
+                            mood = "good food";
+                            repeat1 = false;
+                        }
+                        else
+                        {
+                            Console.WriteLine("User input not understood. Please try again.");
+                            repeat1 = true;
+                        }
                     }
                     else
                     {
@@ -61,32 +70,37 @@ namespace Deliverable_2___Fun_Places_to_Go
                 while (repeat2 == true)
                 {
                     Console.WriteLine("How many people are coming with you?");
-                    Console.WriteLine("1) 0");
-                    Console.WriteLine("2) 1-4");
-                    Console.WriteLine("3) 5-10");
-                    Console.WriteLine("4) 11+");
 
                     userInput = Console.ReadLine();
+                    bool userInputSuccessfulyParsed = Int32.TryParse(userInput, out userInputAsInt);
 
-                    if (userInput == "1")
+                    if (userInputSuccessfulyParsed == true)
                     {
-                        transportation = "sneakers";
-                        repeat2 = false;
-                    }
-                    else if (userInput == "2")
-                    {
-                        transportation = "a sedan";
-                        repeat2 = false;
-                    }
-                    else if (userInput == "3")
-                    {
-                        transportation = "a Volkswagen bus";
-                        repeat2 = false;
-                    }
-                    else if (userInput == "4")
-                    {
-                        transportation = "an airplane";
-                        repeat2 = false;
+                        if (userInputAsInt == 0)
+                        {
+                            transportation = "sneakers";
+                            repeat2 = false;
+                        }
+                        else if (userInputAsInt >= 1 && userInputAsInt <= 4)
+                        {
+                            transportation = "a sedan";
+                            repeat2 = false;
+                        }
+                        else if (userInputAsInt >= 5 && userInputAsInt <= 10)
+                        {
+                            transportation = "a Volkswagen bus";
+                            repeat2 = false;
+                        }
+                        else if (userInputAsInt >= 11)
+                        {
+                            transportation = "an airplane";
+                            repeat2 = false;
+                        }
+                        else
+                        {
+                            Console.WriteLine("User input not understood. Please try again.");
+                            repeat2 = true;
+                        }
                     }
                     else
                     {
